@@ -1734,5 +1734,11 @@ body {
   }
   .gaming-library .item ul li {
     width: 16%;
-  }
+
+	  
+  }.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 }
