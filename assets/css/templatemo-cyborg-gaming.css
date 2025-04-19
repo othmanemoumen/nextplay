@@ -819,12 +819,15 @@ Most Popular Style
   margin-bottom: 30px;
 }
 
-.most-popular .item .item {
-  padding: 0px;
-  border-radius: 0px;
-  background-color: transparent;
-  margin-bottom: 0px;
+.most-popular .item {
+  background-color: #27292a;
+  padding: 30px 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease; /* لتحسين الحركات مثل الزوم */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ظل خفيف لإبراز العنصر */
 }
+
 
 .most-popular .item img {
   border-radius: 23px;
