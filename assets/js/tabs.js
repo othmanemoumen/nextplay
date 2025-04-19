@@ -16585,7 +16585,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll(".item");
 
   items.forEach(function (item) {
-    // تأثير hover
+    // نضيف تأثير التحويل (zoom in) عند المرور بالماوس
     item.addEventListener("mouseenter", function () {
       item.style.transition = "transform 0.3s ease, box-shadow 0.3s ease";
       item.style.transform = "scale(1.05)";
@@ -16593,13 +16593,13 @@ document.addEventListener("DOMContentLoaded", function () {
       item.style.cursor = "pointer";
     });
 
-    // إزالة التأثير عند الخروج
+    // نعيده لحجمه الطبيعي عند الخروج
     item.addEventListener("mouseleave", function () {
       item.style.transform = "scale(1)";
       item.style.boxShadow = "none";
     });
 
-    // الضغط على العنصر لفتح رابط
+    // لو ضغط عليه، يفتح الرابط الموجود في data-link
     item.addEventListener("click", function () {
       const link = item.getAttribute("data-link");
       if (link) {
