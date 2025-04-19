@@ -16581,32 +16581,31 @@ var tooltip = $.widget( "ui.tooltip", {
 
 }));
 
-import React, { useState } from "react";
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".item");
 
-function GameItem() {
-  const [hovered, setHovered] = useState(false);
+  items.forEach(function (item) {
+    // تأثير hover
+    item.addEventListener("mouseenter", function () {
+      item.style.transition = "transform 0.3s ease, box-shadow 0.3s ease";
+      item.style.transform = "scale(1.05)";
+      item.style.boxShadow = "0 0 15px rgba(0,0,0,0.3)";
+      item.style.cursor = "pointer";
+    });
 
-  return (
-    <div
-      className="item"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      onClick={() => window.open("https://example.com/game1", "_blank")}
-      style={{
-        cursor: "pointer",
-        transform: hovered ? "scale(1.05)" : "scale(1)",
-        transition: "0.3s ease",
-        boxShadow: hovered ? "0 0 15px rgba(0,0,0,0.3)" : "none"
-      }}
-    >
-      <img src="assets/images/popular-01.jpg" alt="Fortnite" />
-      <h4>Fortnite<br /><span>Sandbox</span></h4>
-      <ul>
-        <li><i className="fa fa-star"></i> 4.8</li>
-        <li><i className="fa fa-download"></i> 2.3M</li>
-      </ul>
-    </div>
-  );
-}
+    // إزالة التأثير عند الخروج
+    item.addEventListener("mouseleave", function () {
+      item.style.transform = "scale(1)";
+      item.style.boxShadow = "none";
+    });
 
-export default GameItem;
+    // الضغط على العنصر لفتح رابط
+    item.addEventListener("click", function () {
+      const link = item.getAttribute("data-link");
+      if (link) {
+        window.open(link, "_blank");
+      }
+    });
+  });
+});
+
