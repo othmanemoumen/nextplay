@@ -16580,3 +16580,33 @@ var tooltip = $.widget( "ui.tooltip", {
 
 
 }));
+
+import React, { useState } from "react";
+
+function GameItem() {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <div
+      className="item"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onClick={() => window.open("https://example.com/game1", "_blank")}
+      style={{
+        cursor: "pointer",
+        transform: hovered ? "scale(1.05)" : "scale(1)",
+        transition: "0.3s ease",
+        boxShadow: hovered ? "0 0 15px rgba(0,0,0,0.3)" : "none"
+      }}
+    >
+      <img src="assets/images/popular-01.jpg" alt="Fortnite" />
+      <h4>Fortnite<br /><span>Sandbox</span></h4>
+      <ul>
+        <li><i className="fa fa-star"></i> 4.8</li>
+        <li><i className="fa fa-download"></i> 2.3M</li>
+      </ul>
+    </div>
+  );
+}
+
+export default GameItem;
