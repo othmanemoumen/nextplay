@@ -806,6 +806,8 @@ Most Popular Style
 */
 
 .most-popular {
+  display: flex; /* استخدام Flexbox */
+  flex-wrap: wrap; /* السماح بالعناصر بالالتفاف عند الحاجة */
   margin-top: 60px;
   padding: 30px;
   background-color: #1f2122;
@@ -821,7 +823,6 @@ Most Popular Style
   margin-bottom: 60px;
   transition: all 0.3s ease; /* لتحسين الحركات مثل الزوم */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ظل خفيف لإبراز العنصر */
-  flex-wrap: wrap;
 }
 
 
