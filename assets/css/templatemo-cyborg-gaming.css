@@ -482,6 +482,7 @@ Header Style
   color: #e75e8d !important;
 }
 .header-area .main-nav .nav li:last-child:hover a,
+.header-area .main-nav .nav li:last-child a.active {
   color: #fff !important;
   background-color: #e75e8d !important;
 }
