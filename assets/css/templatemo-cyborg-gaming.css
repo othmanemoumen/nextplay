@@ -1746,3 +1746,17 @@ body {
   border: none;
   border-radius: 12px;
 }
+.btn-download {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #00bfff;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #009acd;
+}
