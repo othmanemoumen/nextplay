@@ -1682,67 +1682,104 @@ body {
   margin-right: 0;
 }
 
+.game-details-page {
+  padding: 30px;
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 12px;
+}
+
 .game-header {
   display: flex;
-  align-items: center;
   gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #2c2c2c;
   padding: 20px;
+  border-radius: 12px;
 }
 
 .game-header img {
-  width: 120px;
-  height: 120px;
-  border-radius: 20px;
-  object-fit: cover;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 .game-info h2 {
   margin: 0;
-  font-size: 28px;
-  color: #222;
+  font-size: 26px;
+  color: #fff;
 }
 
 .rating {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #ffc107;
+  margin-top: 8px;
+  color: #f1c40f;
 }
 
 .rating strong {
-  color: #333;
+  color: white;
+  margin-right: 5px;
 }
 
-.rating span {
-  margin-left: 5px;
-  color: #333;
+.download-button {
+  margin-top: 15px;
+}
+
+.btn-download {
+  background-color: #ff4eb5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #ff3399;
 }
 
 .game-description {
-  padding: 0 20px 20px 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
+  margin-top: 30px;
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .game-trailer {
-  padding: 20px;
+  margin-top: 30px;
   text-align: center;
 }
 
-.game-trailer h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.trailer-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .trailer-wrapper iframe {
-  width: 90%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 720px;
   height: 400px;
   border: none;
   border-radius: 12px;
+}
+
+/* Responsive for phones */
+@media (max-width: 768px) {
+  .game-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .game-header img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .btn-download {
+    width: 100%;
+    text-align: center;
+  }
+
+  .trailer-wrapper iframe {
+    height: 250px;
+  }
 }
