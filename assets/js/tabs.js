@@ -16608,12 +16608,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-function openModal() {
-  document.getElementById("gameModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("gameModal").style.display = "none";
-}
 
 
