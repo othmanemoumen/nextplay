@@ -1682,81 +1682,114 @@ body {
   margin-right: 0;
 }
 
+/* العنوان وصورة اللعبة */
 .game-header {
   display: flex;
   align-items: center;
   gap: 20px;
+  background-color: #2c2c2c;
   padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .game-header img {
-  width: 120px;
-  height: 120px;
-  border-radius: 20px;
-  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .game-info h2 {
+  color: #fff;
   margin: 0;
-  font-size: 28px;
-  color: #222;
+  font-size: 24px;
 }
 
 .rating {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #ffc107;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  color: #f1c40f;
 }
 
 .rating strong {
-  color: #333;
+  color: white;
 }
 
-.rating span {
-  margin-left: 5px;
-  color: #333;
+/* استجابة للجوال */
+@media (max-width: 768px) {
+  .game-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .game-header img {
+    width: 60px;
+    height: 60px;
+  }
+}
+/* زر التحميل */
+.download-button {
+  text-align: right;
+  margin-bottom: 10px;
 }
 
+.btn-download {
+  background-color: #00b894;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #019875;
+}
+
+/* وصف اللعبة */
 .game-description {
-  padding: 0 20px 20px 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  color: #eee;
 }
 
+/* التريلر */
 .game-trailer {
-  padding: 20px;
+  margin-top: 30px;
   text-align: center;
-}
-
-.game-trailer h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
+  color: white;
 }
 
 .trailer-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .trailer-wrapper iframe {
   width: 90%;
-  max-width: 800px;
+  max-width: 700px;
   height: 400px;
+  border-radius: 10px;
   border: none;
-  border-radius: 12px;
-}
-.btn-download {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #ec6090;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
 }
 
-.btn-download:hover {
-  background-color: #cccccc;
+/* تحسين المظهر على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .download-button {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .trailer-wrapper iframe {
+    height: 250px;
+  }
 }
