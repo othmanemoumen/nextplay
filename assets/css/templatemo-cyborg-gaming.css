@@ -768,70 +768,102 @@ Header Style
 
 /* 
 ---------------------------------------------
+Banner Style
+--------------------------------------------- 
+*/
+
+.main-banner {
+  background-image: url(../images/banner-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 380px;
+  border-radius: 23px;
+  padding: 80px 60px;
+}
+
+.main-banner h6 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.main-banner h4 {
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.main-banner h4 em {
+  font-style: normal;
+  color: #ec6090;
+}
+
+/* 
+---------------------------------------------
 Most Popular Style
 --------------------------------------------- 
 */
 
-.Gaming-Library {
-  display: flex; /* استخدام Flexbox */
-  flex-wrap: wrap; /* السماح بالعناصر بالالتفاف عند الحاجة */
+.most-popular {
   margin-top: 60px;
   padding: 30px;
   background-color: #1f2122;
   border-radius: 23px;
 }
 
-
-
-.Gaming-Library .item {
+.most-popular .item {
   background-color: #27292a;
- padding: 60px 30px;
-  border-radius: 40px;
-  margin-bottom: 60px;
-  transition: all 0.3s ease; /* لتحسين الحركات مثل الزوم */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ظل خفيف لإبراز العنصر */
+  padding: 30px 15px;
+  border-radius: 23px;
+  margin-bottom: 30px;
 }
 
+.most-popular .item .item {
+  padding: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  margin-bottom: 0px;
+}
 
-
-.Gaming-Library .item img {
+.most-popular .item img {
   border-radius: 23px;
 }
 
-.Gaming-Library .item h4 {
+.most-popular .item h4 {
   font-size: 15px;
   margin-top: 20px;
   margin-bottom: 0px;
   display: inline-block;
 }
 
-.Gaming-Library .item span {
+.most-popular .item span {
   color: #666;
   display: block;
   margin-top: 7px;
   font-weight: 400;
 }
 
-.Gaming-Library .item ul {
+.most-popular .item ul {
   float: right;
   margin-top: 20px;
 }
 
-.Gaming-Library .item ul li {
+.most-popular .item ul li {
   text-align: right;
   color: #fff;
   font-size: 14px;
 }
 
-.Gaming-Library .item ul li:first-child i {
+.most-popular .item ul li:first-child i {
   color: yellow;
 }
 
-.Gaming-Library .item ul li:last-child i {
+.most-popular .item ul li:last-child i {
   color: #ec6090;
 }
 
-.Gaming-Library .main-button {
+.most-popular .main-button {
   text-align: center;
   margin-bottom: -53px;
 }
@@ -926,22 +958,22 @@ footer p a:hover {
 
 /* 
 ---------------------------------------------
-most-popular Style
+Featured Games Style
 --------------------------------------------- 
 */
 
-.most-popular {
+.featured-games {
   border-radius: 23px;
   background-color: #1f2122;
   padding: 30px;
 }
 
-.most-popular .item .thumb {
+.featured-games .item .thumb {
   position: relative;
   overflow: hidden;
 }
 
-.most-popular .item .thumb .hover-effect {
+.featured-games .item .thumb .hover-effect {
   position: absolute;
   bottom: -100px;
   text-align: center;
@@ -951,13 +983,13 @@ most-popular Style
   transition: all .4s;
 }
 
-.most-popular .item .thumb:hover .hover-effect {
+.featured-games .item .thumb:hover .hover-effect {
   opacity: 1;
   visibility: visible;
   bottom: 15px;
 }
 
-.most-popular .item .thumb .hover-effect h6 {
+.featured-games .item .thumb .hover-effect h6 {
   background-color: rgba(31,33,34,0.95);
   display: inline-block;
   color: #ec6090;
@@ -967,60 +999,60 @@ most-popular Style
   border-radius: 25px;
 }
 
-.most-popular .item img {
+.featured-games .item img {
   border-radius: 23px;
 }
 
-.most-popular .item h4 {
+.featured-games .item h4 {
   font-size: 15px;
   margin-top: 20px;
   margin-bottom: 0px;
   display: inline-block;
 }
 
-.most-popular .item span {
+.featured-games .item span {
   color: #666;
   display: block;
   margin-top: 7px;
   font-weight: 400;
 }
 
-.most-popular .item ul {
+.featured-games .item ul {
   float: right;
   margin-top: 20px;
 }
 
-.most-popular .item ul li {
+.featured-games .item ul li {
   text-align: right;
   color: #fff;
   font-size: 14px;
 }
 
-.most-popular .item ul li:first-child i {
+.featured-games .item ul li:first-child i {
   color: yellow;
 }
 
-.most-popular .item ul li:last-child i {
+.featured-games .item ul li:last-child i {
   color: #ec6090;
 }
 
-.most-popular .owl-nav {
+.featured-games .owl-nav {
   position: absolute;
   margin: 0 auto;
   top: -70px;
   right: 0;
 }
 
-.most-popular .owl-nav .owl-prev {
+.featured-games .owl-nav .owl-prev {
   margin-right: 2.5px;
 }
 
-.most-popular .owl-nav .owl-next {
+.featured-games .owl-nav .owl-next {
   margin-left: 2.5px;
 }
 
-.most-popular .owl-nav .owl-prev span,
-.most-popular .owl-nav .owl-next span  {
+.featured-games .owl-nav .owl-prev span,
+.featured-games .owl-nav .owl-next span  {
   font-size: 36px;
   display: inline-block;
   color: #666;
@@ -1028,8 +1060,8 @@ most-popular Style
   transition: all .3s;
 }
 
-.most-popular .owl-nav .owl-prev span:hover,
-.most-popular .owl-nav .owl-next span:hover {
+.featured-games .owl-nav .owl-prev span:hover,
+.featured-games .owl-nav .owl-next span:hover {
   opacity: 1;
   color: #ec6090;
 }
@@ -1483,8 +1515,65 @@ Top Streamers Style
   padding: 8px 20px;
 }
 
+/* 
+---------------------------------------------
+Profile Style
+--------------------------------------------- 
+*/
 
+.main-profile {
+  border-radius: 23px;
+  padding: 30px;
+  background-color: #1f2122;
+}
 
+.main-profile .main-info span {
+  font-size: 14px;
+  color: #fff;
+  background-color: #e75e8d;
+  padding: 8px 20px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.main-profile .main-info h4 {
+  margin-bottom: 20px;
+}
+
+.main-profile .main-info .main-border-button {
+  margin-top: 25px;
+}
+
+.main-profile ul {
+  border-radius: 23px;
+  padding: 30px;
+  background-color: #27292a;
+}
+
+.main-profile ul li {
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #666;
+}
+
+.main-profile ul li span {
+  float: right;
+  font-weight: 500;
+  color: #ec6090;
+}
+
+.main-profile ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
 .clips {
   margin-top: 30px;
@@ -1596,7 +1685,7 @@ body {
     max-height: 100%;
     min-height: 100%;
   }
-  .Gaming-Library  .item .inner-item {
+  .most-popular .item .inner-item {
     margin-bottom: 20px;
   }
 }
@@ -1642,8 +1731,8 @@ body {
   }
   .gaming-library .item ul li {
     width: 16%;
-
-	  
+  }
+}
   }.row {
   margin-left: 0;
   margin-right: 0;
