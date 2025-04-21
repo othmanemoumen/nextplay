@@ -1749,7 +1749,7 @@ body {
 .btn-download {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #00bfff;
+  background-color: #ec6090;
   color: white;
   font-weight: bold;
   border-radius: 8px;
@@ -1758,5 +1758,5 @@ body {
 }
 
 .btn-download:hover {
-  background-color: #ec6090;
+  background-color: #cccccc;
 }
