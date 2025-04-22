@@ -335,8 +335,7 @@
  */
  
  .background-header {
-   background-color: #000000 !important;
-   background-color:transparent !important;
+background-color: #27292a !important; /* خلفية سوداء */
    height: 70px!important;
    position: fixed!important;
    top: 0!important;
