@@ -16609,4 +16609,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+.header-area {
+  background-color: #1F2122;  /* خلفية داكنة أولاً */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-area.scrolled {
+  background-color: transparent;  /* شفاف بعد التمرير */
+  box-shadow: none;
+}
 
