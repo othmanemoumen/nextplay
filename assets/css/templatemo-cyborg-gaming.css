@@ -1707,7 +1707,7 @@
    height: 90px;
    object-fit: contain;
    background-color: #fff;
-   border-radius: 50px;
+   border-radius: 10px;
  }
  
  .game-info h2 {
