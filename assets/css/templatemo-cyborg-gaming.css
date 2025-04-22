@@ -698,14 +698,7 @@ background-color: #27292a !important; /* خلفية سوداء */
      -o-transition: all 0s ease 0s;
      transition: all 0s ease 0s;
      margin-left: 0px;
-   }
-   .header-area.header-sticky .nav {
-     margin-top: 65px !important;
-     text-align: center;
-   }
-   .background-header.header-sticky .nav {
-     margin-top: 70px !important;
-   }
+ 
    .header-area .main-nav .nav li:first-child {
      border-top: 1px solid #eee;
    }
