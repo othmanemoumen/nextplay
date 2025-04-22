@@ -334,37 +334,31 @@
  --------------------------------------------- 
  */
  
- .background-header {
-   background-color: #000000 !important;
-   background-color:transparent !important;
-   height: 70px!important;
-   position: fixed!important;
-   top: 0!important;
-   left: 0;
-   right: 0;
-   box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
-   -webkit-transition: all .5s ease 0s;
-   -moz-transition: all .5s ease 0s;
-   -o-transition: all .5s ease 0s;
-   transition: all .5s ease 0s;
-   display: none;
- }
+.background-header {
+  background-color: #000000 !important; /* خلفية سوداء */
+  height: 70px !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+  display: block; /* تأكد من إظهار العنصر */
+}
  
 .header-area {
-  background-color: #1F2122;  /* خلفية داكنة أولاً */
+  background-color: #1F2122;  /* خلفية داكنة ثابتة */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 70px;
   z-index: 1000;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.header-area.scrolled {
-  background-color: transparent;  /* شفاف بعد التمرير */
-  box-shadow: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* إضافة ظل خفيف */
+  transition: all 0.3s ease;  /* للتنقل السلس بين التغييرات */
 }
  
  .header-area .main-nav {
