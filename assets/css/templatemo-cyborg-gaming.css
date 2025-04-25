@@ -350,7 +350,6 @@ background-color: #27292a !important; /* خلفية سوداء */
  }
  
  .header-area {
-   background-color: #000000;
    background-color: #1F2122;
    position: absolute;
    height: 70px;
@@ -366,7 +365,7 @@ background-color: #27292a !important; /* خلفية سوداء */
  
  .header-area .main-nav {
    min-height: 80px;
-   background: transparent;
+   background-color: #1F2122;
    display: flex;
    padding: 15px 0px;
    border-radius: 50px;
@@ -375,7 +374,7 @@ background-color: #27292a !important; /* خلفية سوداء */
  .background-header .main-nav {
    padding: 0px;
    background-color: transparent;
-   background-color: ;
+   background-color: #1F2122;
  }
  
  .header-area .main-nav #search {
