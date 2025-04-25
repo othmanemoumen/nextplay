@@ -615,13 +615,7 @@ background-color: #27292a !important; /* خلفية سوداء */
    background-color: #e75e8d;
  }
  
- .header-area.header-sticky {
-   min-height: 70px;
- }
- 
- .header-area.header-sticky .nav li a.active {
-   color: #fff;
- }
+
  
  @media (max-width: 1200px) {
    .header-area .main-nav .nav li {
@@ -661,14 +655,7 @@ background-color: #27292a !important; /* خلفية سوداء */
      top: 15px;
      right: 70px;
    }
-   .header-area.header-sticky .nav li a:hover,
-   .header-area.header-sticky .nav li a.active {
-     color: #e75e8d!important;
-     opacity: 1;
-   }
-   .header-area.header-sticky .nav li.search-icon a {
-     width: 100%;
-   }
+  
    .header-area {
      background-color: #f7f7f7;
      padding: 0px 15px;
@@ -698,13 +685,7 @@ background-color: #27292a !important; /* خلفية سوداء */
      transition: all 0s ease 0s;
      margin-left: 0px;
    }
-   .header-area.header-sticky .nav {
-     margin-top: 65px !important;
-     text-align: center;
-   }
-   .background-header.header-sticky .nav {
-     margin-top: 70px !important;
-   }
+  
    .header-area .main-nav .nav li:first-child {
      border-top: 1px solid #eee;
    }
