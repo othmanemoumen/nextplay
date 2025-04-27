@@ -1664,133 +1664,91 @@ background-color: #27292a !important; /* خلفية سوداء */
    margin-right: 0;
  }
  
- .game-details-page {
-   padding: 30px;
-   background-color: #1e1e1e;
-   color: #fff;
-   border-radius: 12px;
- }
- 
- .game-header {
-   display: flex;
-   gap: 20px;
-   align-items: center;
-   flex-wrap: wrap;
-   background-color: #2c2c2c;
-   padding: 20px;
-   border-radius: 12px;
- }
- 
- .game-header img {
-   width: 90px;
-   height: 90px;
-   object-fit: contain;
-   background-color: #fff;
-   border-radius: 10px;
- }
- 
- .game-info h2 {
-   margin: 0;
-   font-size: 26px;
-   color: #fff;
- }
- 
- .rating {
-   margin-top: 8px;
-   color: #f1c40f;
- }
- 
- .rating strong {
-   color: white;
-   margin-right: 5px;
- }
- 
- .download-button {
-   margin-top: 15px;
- }
- 
- .btn-download {
-   background-color: #ff4eb5;
-   color: white;
-   padding: 10px 20px;
-   text-decoration: none;
-   font-weight: bold;
-   border-radius: 8px;
-   transition: 0.3s ease;
- }
- 
- .btn-download:hover {
-   background-color: #ff3399;
- }
- 
- .game-description {
-   margin-top: 30px;
-   background-color: #2e2e2e;
-   padding: 20px;
-   border-radius: 10px;
- }
- 
- .game-trailer {
-   margin-top: 30px;
-   text-align: center;
- }
- 
- .trailer-wrapper iframe {
-   width: 100%;
-   max-width: 720px;
-   height: 400px;
-   border: none;
-   border-radius: 12px;
- }
- 
- /* Responsive for phones */
- @media (max-width: 768px) {
-   .game-header {
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
-   }
- 
-   .game-header img {
-     width: 70px;
-     height: 70px;
-   }
- 
-   .btn-download {
-     width: 100%;
-     text-align: center;
-   }
- 
-   .trailer-wrapper iframe {
-     height: 250px;
-   }
- }
- 
-.game-info {
-  margin-top: 2rem;
-  background-color: #1e1e1e;
-  padding: 1.5rem;
+
+.game-details {
+  background: #fff;
+  padding: 20px;
   border-radius: 12px;
-  max-width: 600px;
-  color: #f5f5f5;
-  font-family: 'Poppins', sans-serif;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.game-info table {
+.game-header {
+  text-align: center;
+}
+
+.game-image {
   width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.rating {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #ff9900;
+}
+
+.game-info {
+  width: 100%;
+  margin: 20px 0;
   border-collapse: collapse;
 }
 
 .game-info th {
   text-align: left;
-  color: #ff4b2b;
-  font-weight: 600;
-  padding: 0.5rem 0;
-  width: 35%;
+  padding: 8px;
+  background: #eee;
+  color: #555;
+  width: 40%;
 }
 
 .game-info td {
-  padding: 0.5rem 0;
-  color: #ddd;
+  padding: 8px;
+  background: #fafafa;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff4b2b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-download:hover {
+  background: #ff416c;
+}
+
+.game-description {
+  margin-top: 30px;
+}
+
+.game-trailer {
+  margin-top: 30px;
+}
+
+.trailer-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.trailer-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
