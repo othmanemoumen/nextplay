@@ -1787,44 +1787,72 @@
       height: 250px;
     }
   }
-.game-info {
-  width: 100%;
-  margin: 20px 0;
-  border-collapse: collapse;
-  background: #1e1e1e;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+.game-info-wrapper {
+  max-width: 800px;
+  margin: 30px auto;
+  animation: fadeSlideUp 1.2s ease forwards;
+  opacity: 0;
 }
 
-.game-info th, .game-info td {
-  padding: 15px 20px;
+.animated-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #121212;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.animated-table th, .animated-table td {
+  padding: 18px 24px;
   text-align: left;
 }
 
-.game-info th {
-  background: #292929;
+.animated-table th {
+  background: #1f1f1f;
   color: #ff9900;
-  font-weight: 600;
-  width: 35%;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.animated-table th i {
+  margin-right: 8px;
+  color: #ff4b2b;
+}
+
+.animated-table td {
+  background: #181818;
+  color: #ddd;
   font-size: 16px;
 }
 
-.game-info td {
-  background: #212121;
-  color: #eee;
-  font-size: 15px;
+.animated-table tr:not(:last-child) td,
+.animated-table tr:not(:last-child) th {
+  border-bottom: 1px solid #2a2a2a;
 }
 
-.game-info tr:not(:last-child) td,
-.game-info tr:not(:last-child) th {
-  border-bottom: 1px solid #333;
+.animated-table tr:hover td {
+  background: #242424;
+  transition: background 0.3s;
 }
 
-/* Responsive tweaks */
+/* Animation for fade and slide up */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
 @media (max-width: 600px) {
-  .game-info th, .game-info td {
-    padding: 10px 12px;
+  .animated-table th, .animated-table td {
+    padding: 12px 15px;
     font-size: 14px;
   }
 }
+
