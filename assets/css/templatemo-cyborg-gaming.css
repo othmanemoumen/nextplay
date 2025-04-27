@@ -1920,3 +1920,10 @@
     transform: translateY(0);
   }
 }
+/* Responsive */
+@media (max-width: 600px) {
+  .device-table th, .device-table td {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}
