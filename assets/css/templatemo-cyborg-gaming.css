@@ -1856,3 +1856,67 @@
   }
 }
 
+/* ستايل عام للجدول */
+.device-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #121212;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  margin-top: 30px;
+  animation: fadeSlideUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+/* رؤوس الأعمدة */
+.device-table th, .device-table td {
+  padding: 18px 24px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* العنوان (Android / iOS) */
+.device-table th {
+  background: #1f1f1f;
+  color: #00e676;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+/* أيقونات داخل العنوان */
+.device-table th i, .device-table th img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* النصوص */
+.device-table td {
+  background: #181818;
+  color: #ddd;
+  font-size: 16px;
+}
+
+/* حدود بين الصفوف */
+.device-table tr:not(:last-child) td,
+.device-table tr:not(:last-child) th {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+/* Hover Effect */
+.device-table tr:hover td {
+  background: #242424;
+  transition: background 0.3s;
+}
+
+/* Animation دخول الجدول */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
