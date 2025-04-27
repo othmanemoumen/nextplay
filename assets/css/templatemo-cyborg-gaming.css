@@ -1794,67 +1794,7 @@
   opacity: 0;
 }
 
-.animated-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #121212;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-}
 
-.animated-table th, .animated-table td {
-  padding: 18px 24px;
-  text-align: left;
-}
-
-.animated-table th {
-  background: #1f1f1f;
-  color: #ff9900;
-  font-weight: 700;
-  font-size: 17px;
-}
-
-.animated-table th i {
-  margin-right: 8px;
-  color: #ff4b2b;
-}
-
-.animated-table td {
-  background: #181818;
-  color: #ddd;
-  font-size: 16px;
-}
-
-.animated-table tr:not(:last-child) td,
-.animated-table tr:not(:last-child) th {
-  border-bottom: 1px solid #2a2a2a;
-}
-
-.animated-table tr:hover td {
-  background: #242424;
-  transition: background 0.3s;
-}
-
-/* Animation for fade and slide up */
-@keyframes fadeSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .animated-table th, .animated-table td {
-    padding: 12px 15px;
-    font-size: 14px;
-  }
-}
 
 /* ستايل عام للجدول */
 .device-table {
@@ -1879,7 +1819,7 @@
 /* العنوان (Android / iOS) */
 .device-table th {
   background: #1f1f1f;
-  color: #00e676;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 17px;
 }
