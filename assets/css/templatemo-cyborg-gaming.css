@@ -1787,3 +1787,21 @@
       height: 250px;
     }
   }
+.game-info {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.game-info th {
+  text-align: left;
+  padding: 8px;
+  background: #eee;
+  color: #555;
+  width: 40%;
+}
+
+.game-info td {
+  padding: 8px;
+  background: #fafafa;
+}
