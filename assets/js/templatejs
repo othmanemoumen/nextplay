@@ -1,1 +1,13 @@
 
+// JavaScript to wrap each character in a span
+document.addEventListener('DOMContentLoaded', () => {
+  const title = document.querySelector('.section-title');
+  const text = title.textContent;
+  let html = '';
+  
+  for (let i = 0; i < text.length; i++) {
+    html += `<span style="animation-delay: ${i * 0.05}s">${text[i]}</span>`;
+  }
+  
+  title.innerHTML = html;
+});
