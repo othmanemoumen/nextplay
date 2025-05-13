@@ -229,8 +229,8 @@
 
         .app-container {
             max-width: 600px;
-            margin: 0 auto;
-        }
+ margin-top: 40px; /* adds space above your main content */
+  }
         
         /* Header with game title and back button */
         .header {
