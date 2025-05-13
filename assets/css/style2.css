@@ -1,12 +1,12 @@
-:root {
-          --primary-color: #3a0ca3;
-   --secondary-color: #4361ee;
-  --accent-color: #7209b7;
-  --text-color: #f8f9fa;
-  --background-color: #121212;
-  --card-background: #1e1e1e;
-   --border-radius: 12px;
-}
+ :root {
+            --primary-color: #3a0ca3;
+            --secondary-color: #4361ee;
+            --accent-color: #7209b7;
+            --text-color: #f8f9fa;
+            --background-color: #121212;
+            --card-background: #1e1e1e;
+            --border-radius: 12px;
+        }
         
         * {
             margin: 0;
