@@ -1,12 +1,4 @@
- :root {
-            --primary-color: #3a0ca3;
-            -secondary-color: #4361ee;
-            -accent-color: #7209b7;
-            -text-color: #f8f9fa;
-            -background-color: #121212;
-            -card-background: #1e1e1e;
-            -border-radius: 12px;
-        }
+
  
         * {
             margin: 0;
@@ -248,9 +240,9 @@
         }
         
         .back-button {
-            background-color: var(-card-background);
+            background-color: #1e1e1e; 
             border: none;
-            color: var(-text-color);
+            color: #f8f9fa ;
             width: 36px;
             height: 36px;
             border-radius: 50%;
@@ -265,8 +257,8 @@
         
         /* Main game info card */
         .game-card {
-            background-color: var(-card-background);
-            border-radius: var(-border-radius);
+            background-color: #1e1e1e;
+            border-radius: 12px;
             padding: 16px;
             margin-bottom: 20px;
             display: flex;
@@ -277,7 +269,7 @@
             width: 100px;
             height: 100px;
             border-radius: 22px;
-            background-color: var(-accent-color);
+            background-color: #7209b7;
             overflow: hidden;
             flex-shrink: 0;
         }
@@ -316,7 +308,7 @@
         }
         
         .download-button {
-            background-color: var(-primary-color);
+            background-color: #3a0ca3;
             color: white;
             border: none;
             border-radius: 20px;
@@ -348,16 +340,16 @@
         .screenshot {
             width: 280px;
             height: 158px;
-            border-radius: var(-border-radius);
+            border-radius: 12px;
             flex-shrink: 0;
-            background-color: var(-card-background);
+            background-color: #1e1e1e;
             overflow: hidden;
         }
         
         /* Description */
         .description-container {
-            background-color: var(-card-background);
-            border-radius: var(-border-radius);
+            background-color: #1e1e1e;
+            border-radius: 12px;
             padding: 16px;
             margin-bottom: 20px;
         }
@@ -368,7 +360,7 @@
         }
         
         .read-more {
-            color: var(-secondary-color);
+            color: #4361ee;
             font-weight: 600;
             text-decoration: none;
             font-size: 14px;
@@ -378,8 +370,8 @@
         
         /* Game details */
         .details-container {
-            background-color: var(-card-background);
-            border-radius: var(-border-radius);
+            background-color: #1e1e1e;
+            border-radius: 12px;
             padding: 16px;
             margin-bottom: 20px;
         }
@@ -407,8 +399,8 @@
         
         /* Reviews */
         .reviews-container {
-            background-color: var(-card-background);
-            border-radius: var(-border-radius);
+           card-background: #1e1e1e;
+            border-radius: 12px;
             padding: 16px;
             margin-bottom: 20px;
         }
@@ -421,7 +413,7 @@
         }
         
         .see-all {
-            color: var(-secondary-color);
+            color: #4361ee;
             font-size: 14px;
             font-weight: 600;
             text-decoration: none;
@@ -481,7 +473,7 @@
             width: 100px;
             height: 100px;
             border-radius: 16px;
-            background-color: var(-card-background);
+            background-color:#1e1e1e; ;
             margin-bottom: 8px;
             overflow: hidden;
         }
