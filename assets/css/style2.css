@@ -239,21 +239,9 @@
             margin-bottom: 20px;
         }
         
-        .back-button {
-            background-color: #1e1e1e; 
-            border: none;
-            color: #f8f9fa ;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            margin-right: 15px;
-            cursor: pointer;
-        }
+     
         
-        .header-title {
-            font-size: 18px;
-            font-weight: 600;
-        }
+      
         
         /* Main game info card */
         .game-card {
