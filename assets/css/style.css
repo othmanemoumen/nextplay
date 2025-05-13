@@ -595,4 +595,7 @@
                 font-size: 2.5rem;
             }
         }
-    
+    .highlight {
+    color: #4e9af1; /* Or any color you prefer */
+}
+
