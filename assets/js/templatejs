@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
   const title = document.querySelector('.section-title');
   const text = title.textContent.trim(); // Handle leading/trailing spaces
   let html = '';
