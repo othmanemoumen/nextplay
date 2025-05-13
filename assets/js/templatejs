@@ -1,12 +1,11 @@
-
-// JavaScript to wrap each character in a span
 document.addEventListener('DOMContentLoaded', () => {
   const title = document.querySelector('.section-title');
-  const text = title.textContent;
+  const text = title.textContent.trim(); // Handle leading/trailing spaces
   let html = '';
   
   for (let i = 0; i < text.length; i++) {
-    html += `<span style="animation-delay: ${i * 0.05}s">${text[i]}</span>`;
+    const char = text[i] === ' ' ? '&nbsp;' : text[i]; // Preserve spaces
+    html += `<span style="animation-delay: ${i * 0.05}s">${char}</span>`;
   }
   
   title.innerHTML = html;
