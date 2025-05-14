@@ -1,4 +1,4 @@
-  document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const preloader = document.querySelector('.preloader');
             const content = document.querySelector('.content');
             const dotsContainer = document.querySelector('.dots-container');
