@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nextplay- Download Free Games</title>
     <link rel="stylesheet" href="assets/css/style.css">
-<script src="https://unpkg.com/lottie-web@5.7.4/build/player/lottie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 
 </head>
 <body>
@@ -172,26 +172,19 @@
             <p>&copy; 2025 Nextplay. All rights reserved.</p>
         </div>
     </footer>
-    <div id="lottie-animation" style="width: 800px; height: 600px;"></div>
+<div id="lottie-container" style="width: 400px; height: 400px;"></div>
 
-  <!-- Include your custom Lottie Loader -->
-    <script src="assets/javascripts/lottie-loader.js"></script>
-    
-    <!-- Initialize the animation loader -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const loader = new LottieLoader();
-            
-            // Use relative path matching your folder structure
-            loader.loadAnimation(
-                'assets/animations/lottie.json',  // Path to your animation file
-                '#lottie-animation',             // Container selector
-                { 
-                    autoplay: true, 
-                    loop: true 
-                }
-            );
-        });
-    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+<div id="lottie-container" style="width: 400px; height: 400px;"></div>
+<script>
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-container'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://lottie.host/embed/7e7617af-53fc-4337-9d85-5576954a8e46/7IrnTgHoSG.json' // Your animation URL
+    });
+</script>
+
 </body>
 </html>
