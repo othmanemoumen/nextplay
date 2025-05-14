@@ -7,3 +7,9 @@ window.addEventListener("load", () => {
     document.body.removeChild(loader);
   });
 });
+	// Page loading animation
+	$(window).on('load', function() {
+
+        $('#js-preloader').addClass('loaded');
+
+    });
