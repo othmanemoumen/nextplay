@@ -1,10 +1,11 @@
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
-
-  loader.classList.add("loader--hidden");
-
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
+<script>
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('js-preloader');
+    if (preloader) {
+      preloader.style.opacity = '0';
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 300); // match the CSS transition duration
+    }
   });
-});
-	
+</script>
