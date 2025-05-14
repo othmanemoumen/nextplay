@@ -7,7 +7,7 @@
     
     // Load your animation
     loader.loadAnimation(
-      '/assets/animations/pld1cUsAtM.json', // Path to your animation file
+      '/assets/animations/lottie.json', // Path to your animation file
       '#lottie-animation', // Container selector
       {
         autoplay: true,
