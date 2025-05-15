@@ -234,7 +234,7 @@
             transition: all 0.3s ease;
         }
         
-      /* Hero Section Styles */
+       /* Hero Section Styles */
     .hero {
       position: relative;
       width: 100%;
@@ -366,8 +366,89 @@
       background-color: #cc0000;
       transform: translateY(-2px);
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-        
-  
+    }
+    
+    /* Particles animation */
+    .particles-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 3;
+    }
+    
+    .particle {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    
+    .game-icon {
+      position: absolute;
+      font-size: 18px;
+      opacity: 0;
+      animation: iconFloat 10s linear infinite;
+      color: rgba(255, 255, 255, 0.6);
+      z-index: 3;
+      pointer-events: none;
+    }
+    
+    @keyframes iconFloat {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    
+    /* HUD elements */
+    .hud-corner {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      z-index: 2;
+      opacity: 0.6;
+    }
+    
+    .hud-top-left {
+      top: 20px;
+      left: 20px;
+      border-top: 3px solid #ff0000;
+      border-left: 3px solid #ff0000;
+    }
+    
+    .hud-top-right {
+      top: 20px;
+      right: 20px;
+      border-top: 3px solid #ff0000;
+      border-right: 3px solid #ff0000;
+    }
+    
+    .hud-bottom-left {
+      bottom: 20px;
+      left: 20px;
+      border-bottom: 3px solid #ff0000;
+      border-left: 3px solid #ff0000;
+    }
+    
+    .hud-bottom-right {
+      bottom: 20px;
+      right: 20px;
+      border-bottom: 3px solid #ff0000;
+      border-right: 3px solid #ff0000;
+    }
               /* Base styles */
 
         /* Section styling */
