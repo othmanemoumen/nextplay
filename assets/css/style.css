@@ -372,7 +372,7 @@
             backdrop-filter: blur(24px);
             border-radius: 8px; /* Reduced radius */
             overflow: hidden;
-            outline: 1px solid white; /* Reduced white outline */
+            outline: 0.2px solid white; /* Reduced white outline */
             
             /* Added to position content */
             display: flex;
