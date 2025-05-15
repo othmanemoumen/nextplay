@@ -352,9 +352,9 @@
               /* Card styles from Uiverse.io by dylanharriscameron */
         .card {
             position: relative;
-            width: 200px;
-            height: 320px; /* Increased height to accommodate app info */
-            border-radius: 14px;
+            width: 220px;
+            height: 280px; /* More square proportions */
+            border-radius: 12px; /* Slightly reduced radius */
             z-index: 1111;
             overflow: hidden;
             display: flex;
@@ -376,7 +376,7 @@
             backdrop-filter: blur(24px);
             border-radius: 10px;
             overflow: hidden;
-            outline: 2px solid white;
+            outline: 0.5px solid white;
             
             /* Added to position content */
             display: flex;
