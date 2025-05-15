@@ -648,7 +648,162 @@
         }
 
 
+/* From Uiverse.io by alexruix */ 
+.card {
+ --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+ width: 190px;
+ height: 254px;
+ padding: 5px;
+ border-radius: 1rem;
+ overflow: visible;
+ background: #f7ba2b;
+ background: var(--background);
+ position: relative;
+ z-index: 1;
+}
 
+.card::after {
+ position: absolute;
+ content: "";
+ top: 30px;
+ left: 0;
+ right: 0;
+ z-index: -1;
+ height: 100%;
+ width: 100%;
+ transform: scale(0.8);
+ filter: blur(25px);
+ background: #f7ba2b;
+ background: var(--background);
+ transition: opacity .5s;
+}
+
+.card-info {
+ --color: #181818;
+ background: var(--color);
+ color: var(--color);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100%;
+ overflow: visible;
+ border-radius: .7rem;
+}
+
+.card .title {
+ font-weight: bold;
+ letter-spacing: .1em;
+}
+
+/*Hover*/
+.card:hover::after {
+ opacity: 0;
+}
+
+.card:hover .card-info {
+ color: #f7ba2b;
+ transition: color 1s;
+}
+  .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+      background: var(--background);
+      padding: 3px;
+      border-radius: 1rem;
+      width: 300px;
+      position: relative;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card-info {
+      background: #181818;
+      border-radius: 1rem;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .app-icon img {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+
+    .app-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .app-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0;
+      color: #f7ba2b;
+    }
+
+    .app-developer {
+      font-size: 0.85rem;
+      color: #aaa;
+      margin: 0.2rem 0;
+    }
+
+    .app-rating {
+      font-size: 0.85rem;
+      color: #ffdd57;
+    }
+
+    .app-rating .stars {
+      margin-right: 0.5rem;
+    }
+
+    .app-stats {
+      font-size: 0.8rem;
+      color: #888;
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.3rem;
+      flex-wrap: wrap;
+    }
+
+    .download-btn {
+      background-color: #f7ba2b;
+      color: #181818;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #ea5358;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    }
 
 
 
