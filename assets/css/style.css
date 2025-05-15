@@ -375,7 +375,9 @@
  color: #f7ba2b;
  transition: color 1s;
 }
-  .cards-container {
+
+
+.cards-container {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
