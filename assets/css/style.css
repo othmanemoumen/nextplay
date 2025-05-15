@@ -694,10 +694,6 @@
  border-radius: .7rem;
 }
 
-.card .title {
- font-weight: bold;
- letter-spacing: .1em;
-}
 
 /*Hover*/
 .card:hover::after {
