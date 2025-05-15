@@ -342,11 +342,7 @@
             width: 100%;
         }
 
- .games-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 2rem;
-        }
+
 
 
               /* Card styles from Uiverse.io by dylanharriscameron */
@@ -498,14 +494,7 @@
             transform: translateY(-2px);
         }
         
-        /* Create an alternating color card */
-        .card:nth-child(2) .blob {
-            background-color: #ff375f;
-        }
-        
-        .card:nth-child(3) .blob {
-            background-color: #34c759;
-        }
+      
         
         /* Container for displaying multiple cards */
         .cards-container {
