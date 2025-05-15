@@ -389,7 +389,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            background-color: #3871ff; /* Changed color to app-style blue */
+            background-color: #ff0000; /* Changed color to app-style blue */
             opacity: 1;
             filter: blur(12px);
             animation: blob-bounce 5s infinite ease;
