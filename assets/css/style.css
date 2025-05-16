@@ -264,6 +264,7 @@
  background: #f7ba2b;
  background: var(--background);
  transition: opacity .5s;
+
 }
 .banner-card-info {
  color: #181818;
