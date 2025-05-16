@@ -239,9 +239,9 @@
               /* Base styles */
 .banner-card {
    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
- width: 150px;
+ width: 1000px;
  height: 500px;
- padding: 5px;
+ padding: 8px;
  border-radius: 1rem;
  overflow: visible;
  background: #f7ba2b;
