@@ -239,8 +239,8 @@
               /* Base styles */
 .banner-card {
    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
- width: 190px;
- height: 254px;
+ width: 150px;
+ height: 500px;
  padding: 5px;
  border-radius: 1rem;
  overflow: visible;
@@ -266,7 +266,7 @@
  transition: opacity .5s;
 }
 .banner-card-info {
-         --color: #181818;
+ color: #181818;
  background: var(--color);
  color: var(--color);
  display: flex;
