@@ -410,6 +410,7 @@ body {
  background: var(--color);
  color: var(--color);
  display: flex;
+ flex-direction: column;  /* 🔥 stack vertically */
  justify-content: center;
  align-items: center;
  width: 100%;
