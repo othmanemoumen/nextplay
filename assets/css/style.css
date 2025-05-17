@@ -267,7 +267,7 @@
 
 }
 .banner-card-info {
- color: #181818;
+--color: #181818;
  background: var(--color);
  color: var(--color);
  display: flex;
