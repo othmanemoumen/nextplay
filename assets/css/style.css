@@ -290,7 +290,7 @@
 
 
 
-.banner .highlight {
+.banner-card .highlight {
  background: linear-gradient(to left, #f7ba2b, #ea5358);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
