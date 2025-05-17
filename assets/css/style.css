@@ -294,8 +294,11 @@
 }
 
 .banner .highlight {
-  color: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
-}
+.title {
+  background: linear-gradient(to left, #f7ba2b, #ea5358);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}}
 
 .banner p {
   font-size: 1.2rem;
