@@ -344,18 +344,10 @@ body {
         }
         
         .section-title {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            text-align: center;
-            font-weight: 700;
-            background: linear-gradient(45deg, #6b5bff, #ff59c5);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            position: relative;
-            display: inline-block;
-            left: 50%;
-            transform: translateX(-50%);
+           background: linear-gradient(to left, #f7ba2b, #ea5358);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
         }
         
         .section-title::after {
