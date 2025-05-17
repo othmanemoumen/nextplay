@@ -288,10 +288,7 @@
  transition: color 1s;
 }
 
-.banner h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
+
 
 .banner .highlight {
  background: linear-gradient(to left, #f7ba2b, #ea5358);
