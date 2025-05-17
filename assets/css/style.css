@@ -278,7 +278,15 @@
  overflow: visible;
  border-radius: .7rem;
 }
+/*Hover*/
+.card:hover::after {
+ opacity: 0;
+}
 
+.banner-card-:hover .banner-card-info {
+ color: #f7ba2b;
+ transition: color 1s;
+}
 
 /* Section styling */
         .featured-games {
