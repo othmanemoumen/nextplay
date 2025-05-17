@@ -419,10 +419,7 @@ body {
  border-radius: .7rem;
 }
 
-.card .title {
- font-weight: bold;
- letter-spacing: .1em;
-}
+
 
 /*Hover*/
 .card:hover::after {
@@ -435,12 +432,7 @@ body {
 }
 
 
-.cards-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
+
 
    
 
