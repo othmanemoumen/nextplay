@@ -244,14 +244,55 @@
       
         
         /* Main game info card */
-        .game-card {
-            background-color: #1e1e1e;
+       .app-container {
+            max-width: 100%;
+ margin-top: 40px; /* adds space above your main content */
+  }
+        
+       
+      
+           .style-card {
+          --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  width: auto;
+  height: auto;
+  margin: 2rem 0; /* Adds space above and below */
+  padding: 5px;
+  border-radius: 1rem;
+  overflow: visible;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+}
+
+       /* Glow Background */
+.style-card::after {
+ position: absolute;
+  content: "";
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.8);
+  filter: blur(25px);
+  background: var(--background);
+  transition: opacity 0.5s;
+}
+
+      
+        
+        /* Main game info card */
+        .game-card  {
+   background-color: #1e1e1e;
             border-radius: 12px;
             padding: 16px;
-            margin-bottom: 20px;
             display: flex;
             gap: 16px;
+            width:auto;
+            height: auto;
         }
+
         
         .game-icon {
             width: 100px;
@@ -297,15 +338,20 @@
         }
         
         .download-button {
-            background-color: #3a0ca3;
-            color: white;
-            border: none;
-            border-radius: 20px;
-            padding: 6px 20px;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
+              background-color: #f7ba2b;
+  color: #181818;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
         }
+        .download-button:hover {
+  background-color: #ea5358;
+  color: #fff;
+}
         
         /* Screenshots carousel */
         .screenshots-container {
@@ -340,7 +386,7 @@
             background-color: #1e1e1e;
             border-radius: 12px;
             padding: 16px;
-            margin-bottom: 20px;
+            
         }
         
         .description-text {
@@ -363,7 +409,7 @@
             background-color: #1e1e1e;
             border-radius: 12px;
             padding: 16px;
-            margin-bottom: 20px;
+            
         }
         
         .details-grid {
@@ -446,6 +492,7 @@
             line-height: 1.5;
             color: white;
         }
+        
         
         /* Similar games */
         .similar-games-container {
