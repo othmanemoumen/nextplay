@@ -374,7 +374,12 @@ body {
             width: 100%;
         }
 
-.cards-container
+.cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
 /* From Uiverse.io by alexruix */ 
 .card {
  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
