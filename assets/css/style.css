@@ -288,6 +288,20 @@
  transition: color 1s;
 }
 
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.banner .highlight {
+  color: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
 /* Section styling */
         .featured-games {
             max-width: 1200px;
