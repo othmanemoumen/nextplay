@@ -1,7 +1,8 @@
  
-        /* Reset and base styles */
-        /* CSS Reset + Base Theme Setup */
-* {
+/* Universal Reset */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
