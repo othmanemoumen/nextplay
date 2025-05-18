@@ -245,7 +245,8 @@ html, body {
 
               /* Base styles */
 .banner-card {
-  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+ --background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+
 width: 100%;
   height: 300px;
   max-width: 100%;
@@ -304,7 +305,7 @@ font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .banner-card .highlight {
-  background: linear-gradient(to left, #f7ba2b, #ea5358);
+ --background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -395,7 +396,8 @@ font-size: clamp(1rem, 4vw, 2rem);
 
 /* Card Box */
 .card {
-  --background: linear-gradient(to left, #f7ba2b, #ea5358);
+ --background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+
   background: var(--background);
   padding: 5px;
   border-radius: 1rem;
@@ -596,7 +598,5 @@ font-size: clamp(1rem, 4vw, 2rem);
                 font-size: 2.5rem;
             }
         }
-    .highlight {
-    color: #4e9af1; /* Or any color you prefer */
-}
+   
 
