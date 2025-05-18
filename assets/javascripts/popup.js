@@ -1,27 +1,28 @@
- // Get elements
-        const showPopupBtn = document.getElementById('showPopup');
+        // Get elements
+        const downloadBtn = document.getElementById('downloadBtn');
         const overlay = document.getElementById('overlay');
         const progressBar = document.getElementById('progressBar');
         const statusText = document.getElementById('statusText');
 
-        // Array of status messages to display during loading
+        // Array of status messages to display during download
         const statusMessages = [
-            "Initializing...",
-            "Connecting to server...",
-            "Loading data...",
-            "Processing information...",
-            "Almost there...",
-            "Finalizing..."
+            "Initializing download...",
+            "Preparing file...",
+            "Downloading 2.3MB of 15.7MB...",
+            "Downloading 6.8MB of 15.7MB...",
+            "Downloading 10.2MB of 15.7MB...",
+            "Downloading 14.1MB of 15.7MB...",
+            "Finalizing download..."
         ];
 
-        // Show popup and start loading simulation
-        showPopupBtn.addEventListener('click', function() {
+        // Show popup and start download simulation
+        downloadBtn.addEventListener('click', function() {
             overlay.style.display = 'flex';
-            simulateLoading();
+            simulateDownload();
         });
 
-        // Simulate a loading process
-        function simulateLoading() {
+        // Simulate a download process
+        function simulateDownload() {
             let progress = 0;
             let messageIndex = 0;
             
@@ -31,29 +32,39 @@
             
             const interval = setInterval(() => {
                 // Increment progress
-                progress += Math.floor(Math.random() * 15) + 5;
+                progress += Math.floor(Math.random() * 10) + 2;
                 
                 if (progress >= 100) {
                     progress = 100;
                     clearInterval(interval);
                     
-                    // Complete the loading
+                    // Complete the download
                     progressBar.style.width = '100%';
-                    statusText.textContent = 'Completed!';
+                    statusText.textContent = 'Download Complete!';
+                    
+                    // Change download button text temporarily
+                    downloadBtn.textContent = 'Downloaded';
+                    downloadBtn.style.backgroundColor = '#4CAF50';
                     
                     // Close the popup after a delay
                     setTimeout(() => {
                         overlay.style.display = 'none';
+                        
+                        // Reset button after 3 seconds
+                        setTimeout(() => {
+                            downloadBtn.textContent = 'Free Download';
+                            downloadBtn.style.backgroundColor = '#2196F3';
+                        }, 3000);
                     }, 1000);
                 } else {
                     // Update progress bar
                     progressBar.style.width = progress + '%';
                     
                     // Update status message occasionally
-                    if (progress > (messageIndex + 1) * 20 && messageIndex < statusMessages.length - 1) {
+                    if (progress > (messageIndex + 1) * 15 && messageIndex < statusMessages.length - 1) {
                         messageIndex++;
                         statusText.textContent = statusMessages[messageIndex];
                     }
                 }
-            }, 500);
+            }, 300);
         }
