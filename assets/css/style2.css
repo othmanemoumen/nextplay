@@ -254,14 +254,13 @@
 }
       
            .style-card {
- --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+ background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
   width: auto;
   height: auto;
   margin: 2rem 0; /* Adds space above and below */
   padding: 5px;
   border-radius: 1rem;
   overflow: visible;
-  background: var(--background);
   position: relative;
   z-index: 1;
 }
