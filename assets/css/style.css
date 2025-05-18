@@ -479,7 +479,50 @@ background: linear-gradient(to left, #f78ca0, #f9748f, #7aa1f7);
   color: #fff;
 }
 
-     
+   @media (max-width: 600px) {
+  .featured-games {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cards-container {
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-info {
+    padding: 0.8rem;
+  }
+
+  .app-icon img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .app-name {
+    font-size: 1rem;
+  }
+
+  .app-developer,
+  .app-rating,
+  .app-stats {
+    font-size: 0.75rem;
+  }
+
+  .download-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+}
+  
         footer {
             background-color: #0a131c;
             padding: 3rem 1rem;
