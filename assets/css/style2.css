@@ -336,7 +336,7 @@ background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
   transition: background 0.3s ease;
         }
         .download-button:hover {
-  background-color: linear-gradient(to left,#fbc2eb , #fad0c4,#ff9a9e );
+background: linear-gradient(to left, #fbc2eb , #fad0c4, #ff9a9e);
   color: #fff;
 }
         
