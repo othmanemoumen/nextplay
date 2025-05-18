@@ -312,7 +312,7 @@ font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .banner-card .explore-btn {
-  background-color: #f7ba2b;
+   --background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
   color: #181818;
   border: none;
   padding: 0.6rem 1.5rem;
@@ -323,7 +323,7 @@ font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .banner-card .explore-btn:hover {
-  background-color: #ea5358;
+   --background: linear-gradient(to left, #fbc2eb, #fad0c4, #ff9a9e);
   color: #fff;
 }
 @media (max-width: 768px) {
