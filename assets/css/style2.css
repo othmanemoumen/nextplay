@@ -155,7 +155,8 @@
         }
         
         .search-bar button {
-            background: linear-gradient(90deg, #ff4757, #5352ed);
+           --background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+;
             border: none;
             padding: 0.7rem 1.5rem;
             color: white;
@@ -330,8 +331,7 @@
         }
         
         .download-button {
-              background-color: #f7ba2b;
-  color: #181818;
+   --background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
   padding: 0.5rem 1.2rem;
   font-weight: bold;
   font-size: 1rem;
@@ -341,7 +341,7 @@
   transition: background 0.3s ease;
         }
         .download-button:hover {
-  background-color: #ea5358;
+  background-color: linear-gradient(to left,#fbc2eb , #fad0c4,#ff9a9e );
   color: #fff;
 }
         
