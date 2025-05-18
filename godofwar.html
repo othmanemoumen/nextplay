@@ -47,10 +47,21 @@
                     <div class="rating-count">4.2 • 24K Reviews</div>
                 </div>
                 <button class="download-button">Free Download </button>
-            </div>
+            <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+            </svg></div>
         </div>
 </div>
-
+<div class="overlay" id="overlay">
+        <div class="popup">
+            <h3>Downloading File</h3>
+            <div class="loader"></div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="status-text" id="statusText">Initializing download...</div>
+        </div>
+    </div>
         <!-- Screenshots -->
         <div class="screenshots-container">
             <h2 class="section-title">Screenshots</h2>
