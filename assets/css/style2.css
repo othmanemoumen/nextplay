@@ -234,11 +234,7 @@
   }
         
         /* Header with game title and back button */
-        .header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+       
         
      
         
@@ -258,7 +254,7 @@
 }
       
            .style-card {
-          --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+ --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
   width: auto;
   height: auto;
   margin: 2rem 0; /* Adds space above and below */
@@ -331,7 +327,7 @@
         }
         
         .download-button {
-   --background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+   background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
   padding: 0.5rem 1.2rem;
   font-weight: bold;
   font-size: 1rem;
