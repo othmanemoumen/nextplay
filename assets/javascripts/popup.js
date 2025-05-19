@@ -1,9 +1,12 @@
+  // Your AdBleuMedia locker URL
+        const adBleuMediaLockerURL = "https://yourlockerlink.adbleumedia.com";
+        
         // Get elements
         const downloadBtn = document.getElementById('downloadBtn');
         const overlay = document.getElementById('overlay');
         const progressBar = document.getElementById('progressBar');
         const statusText = document.getElementById('statusText');
-
+        
         // Array of status messages to display during download
         const statusMessages = [
             "Initializing download...",
@@ -14,13 +17,13 @@
             "Downloading 14.1MB of 15.7MB...",
             "Finalizing download..."
         ];
-
+        
         // Show popup and start download simulation
         downloadBtn.addEventListener('click', function() {
             overlay.style.display = 'flex';
             simulateDownload();
         });
-
+        
         // Simulate a download process
         function simulateDownload() {
             let progress = 0;
@@ -40,14 +43,18 @@
                     
                     // Complete the download
                     progressBar.style.width = '100%';
-                    statusText.textContent = 'Download Complete!';
+                    statusText.textContent = 'Download Complete! Redirecting...';
                     
                     // Change download button text temporarily
                     downloadBtn.textContent = 'Downloaded';
                     downloadBtn.style.backgroundColor = '#4CAF50';
                     
-                    // Close the popup after a delay
+                    // Redirect to AdBleuMedia locker after a delay
                     setTimeout(() => {
+                        window.location.href = adBleuMediaLockerURL;
+                        
+                        // The following code won't execute due to redirection
+                        // But keeping it in case redirection is disabled
                         overlay.style.display = 'none';
                         
                         // Reset button after 3 seconds
