@@ -1,5 +1,6 @@
   // Your AdBleuMedia locker URL
-        const adBleuMediaLockerURL = "https://yourlockerlink.adbleumedia.com";
+        const adBleuMediaLockerURL = "your-deployment-url.com/14e73ac
+";
         
         // Get elements
         const downloadBtn = document.getElementById('downloadBtn');
