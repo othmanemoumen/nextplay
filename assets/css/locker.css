@@ -1,5 +1,5 @@
 
- .banner-container {
+ .locker-banner {
       position: relative;
       width: 100%;
       max-width: 600px;
@@ -7,7 +7,7 @@
     }
 
     /* Background banner image */
-    .locker-banner img.banner-bg {
+    .locker-banner img.locker-banner-bg {
       width: 100%;
       height: auto;
       display: block;
