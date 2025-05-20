@@ -3,6 +3,7 @@ const downloadBtn = document.getElementById('downloadBtn');
 const overlay = document.getElementById('overlay');
 const progressBar = document.getElementById('progressBar');
 const statusText = document.getElementById('statusText');
+const downloadContainer = document.getElementById('downloadContainer'); // Get the container element
 
 // Array of status messages to display during download
 const statusMessages = [
@@ -18,6 +19,10 @@ const statusMessages = [
 // Show popup and start download simulation
 downloadBtn.addEventListener('click', function () {
     overlay.style.display = 'flex';
+    // Hide the download container if it's already showing from a previous attempt
+    if (downloadContainer) {
+        downloadContainer.style.display = 'none';
+    }
     simulateDownload();
 });
 
@@ -25,31 +30,35 @@ downloadBtn.addEventListener('click', function () {
 function simulateDownload() {
     let progress = 0;
     let messageIndex = 0;
-
     // Reset progress bar and status
     progressBar.style.width = '0%';
     statusText.textContent = statusMessages[0];
-
+    
     const interval = setInterval(() => {
         // Increment progress
         progress += Math.floor(Math.random() * 10) + 2;
-
+        
         if (progress >= 100) {
             progress = 100;
             clearInterval(interval);
-
+            
             // Complete the download
             progressBar.style.width = '100%';
             statusText.textContent = 'Download Complete! Redirecting...';
-
+            
             // Change download button text temporarily
             downloadBtn.textContent = 'Downloaded';
             downloadBtn.style.backgroundColor = '#4CAF50';
-
+            
             // Hide overlay after short delay
             setTimeout(() => {
                 overlay.style.display = 'none';
-
+                
+                // Show the download container
+                if (downloadContainer) {
+                    downloadContainer.style.display = 'block'; // or 'flex' depending on your CSS
+                }
+                
                 // Reset button after 3 seconds
                 setTimeout(() => {
                     downloadBtn.textContent = 'Free Download';
@@ -59,7 +68,6 @@ function simulateDownload() {
         } else {
             // Update progress bar
             progressBar.style.width = progress + '%';
-
             // Update status message occasionally
             if (progress > (messageIndex + 1) * 15 && messageIndex < statusMessages.length - 1) {
                 messageIndex++;
