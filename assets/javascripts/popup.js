@@ -22,6 +22,8 @@ downloadBtn.addEventListener('click', function () {
     // Hide the download container if it's already showing from a previous attempt
     if (downloadContainer) {
         downloadContainer.style.display = 'none';
+        downloadContainer.style.transform = 'scale(0.7)';
+        downloadContainer.style.opacity = '0';
     }
     simulateDownload();
 });
@@ -54,9 +56,17 @@ function simulateDownload() {
             setTimeout(() => {
                 overlay.style.display = 'none';
                 
-                // Show the download container
+                // Show the download container with popup animation
                 if (downloadContainer) {
+                    // Make sure the container has transition styles
+                    downloadContainer.style.transition = 'all 0.3s ease-in-out';
                     downloadContainer.style.display = 'block'; // or 'flex' depending on your CSS
+                    
+                    // Small delay to ensure display:block takes effect before animation
+                    setTimeout(() => {
+                        downloadContainer.style.transform = 'scale(1)';
+                        downloadContainer.style.opacity = '1';
+                    }, 10);
                 }
                 
                 // Reset button after 3 seconds
