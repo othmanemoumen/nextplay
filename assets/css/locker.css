@@ -76,7 +76,8 @@
   color: red;
   padding: 12px 25px;
  border-radius: 10px;
-  font-size: 14px;
+ border: 5px red;
+ font-size: 14px;
   cursor: pointer;
   width: 100%;
   transition: background-color 0.3s ease;
