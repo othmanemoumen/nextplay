@@ -30,22 +30,22 @@
    
 
     /* App icon over the banner */
-    .Icon {
-   
-      transform: translateX(-50%);
-      width: 120px;
-      height: 120px;
-      border-radius: 25px;
-      border: 5px solid white;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      background-color: white;
-      object-fit: cover;
-    }
+  .icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffffff10;
+}
 
-    .content {
-      text-align: center;
-      margin-top: 80px;
-    }
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
   
 
