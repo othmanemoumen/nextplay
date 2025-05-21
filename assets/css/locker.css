@@ -28,21 +28,7 @@
 
 
 
-    .locker-banner-container {
-      position: relative;
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    /* Background banner image */
-    .locker-banner-container img.locker-bg {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-    }
+   
 
     /* App icon over the banner */
     .locker-icon {
