@@ -15,11 +15,7 @@
  width: 320px;
 }
 
-.lockerstylecard.show {
-  display: block;
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
+
  .locker  {
    background-color: #1e1e1e;
             border-radius: 12px;
