@@ -11,7 +11,7 @@
             z-index: 1000;
         }
 .popup-container.active {
-  display: flex;
+  display: block;
     opacity: 1;
 }
         .locker {
