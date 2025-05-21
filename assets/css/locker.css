@@ -1,4 +1,4 @@
-        .overlay {
+        .popup-container {
             position: fixed;
             top: 0;
             left: 0;
@@ -10,7 +10,7 @@
             align-items: center;
             z-index: 1000;
         }
-.overlay.active {
+.popup-container.active {
   display: flex;
     opacity: 1;
 }
