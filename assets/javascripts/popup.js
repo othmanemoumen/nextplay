@@ -57,7 +57,7 @@ function simulateDownload() {
                 overlay.style.display = 'none';
                 
                 // Show the download container with popup animation
-                if (locker-style-card) {
+                if (lockerstylecard) {
                     // Make sure the container has transition styles
                    lockerstylecard.style.transition = 'all 0.3s ease-in-out';
                    lockerstylecard.style.display = 'block'; // or 'flex' depending on your CSS
