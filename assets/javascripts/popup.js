@@ -4,6 +4,7 @@ const overlay = document.getElementById('overlay');
 const progressBar = document.getElementById('progressBar');
 const statusText = document.getElementById('statusText');
 const downloadContainer = document.getElementById('downloadContainer'); // Get the container element
+const lockerstylecard = document.querySelector('.lockerstylecard');
 
 // Array of status messages to display during download
 const statusMessages = [
