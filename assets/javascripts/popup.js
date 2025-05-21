@@ -61,7 +61,7 @@ function simulateDownload() {
                 if (lockerstylecard) {
                     // Make sure the container has transition styles
                    lockerstylecard.style.transition = 'all 0.3s ease-in-out';
-                   lockerstylecard.style.display = 'block'; // or 'flex' depending on your CSS
+                   lockerstylecard.style.display = 'flex'; // or 'flex' depending on your CSS
                     
                     // Small delay to ensure display:block takes effect before animation
                     setTimeout(() => {
