@@ -9,7 +9,7 @@
   transform-origin: center;
   z-index: 9999;
   opacity: 0;
-  display: none;
+  display: flex;
   transition: opacity 0.3s ease, transform 0.3s ease;
   overflow: hidden;
   width: 320px;
