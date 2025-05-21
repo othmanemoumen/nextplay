@@ -11,7 +11,8 @@
   opacity: 0;
   display: flex;
   transition: opacity 0.3s ease, transform 0.3s ease;
-  width: 320px;
+   overflow: hidden;
+ width: 320px;
 }
 
 .lockerstylecard.show {
