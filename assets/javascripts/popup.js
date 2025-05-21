@@ -59,13 +59,13 @@ function simulateDownload() {
                 // Show the download container with popup animation
                 if (locker-style-card) {
                     // Make sure the container has transition styles
-                   locker-style-card.style.transition = 'all 0.3s ease-in-out';
-                    locker-style-card.style.display = 'block'; // or 'flex' depending on your CSS
+                   lockerstylecard.style.transition = 'all 0.3s ease-in-out';
+                   lockerstylecard.style.display = 'block'; // or 'flex' depending on your CSS
                     
                     // Small delay to ensure display:block takes effect before animation
                     setTimeout(() => {
-                        locker-style-card.style.transform = 'scale(1)';
-                       locker-style-card.style.opacity = '1';
+                       lockerstylecard.style.transform = 'scale(1)';
+                      lockerstylecard.style.opacity = '1';
                     }, 10);
                 }
                 
