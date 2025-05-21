@@ -59,3 +59,33 @@
   object-fit: cover;
   z-index: 10;
 }
+.locker-content {
+  text-align: center;
+  padding: 80px 20px 20px; /* padding-top accommodates the floating icon */
+  font-family: Arial, sans-serif;
+}
+
+.locker-content h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.locker-content p {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.locker-content button {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.locker-content button:hover {
+  background-color: #1976D2;
+}
