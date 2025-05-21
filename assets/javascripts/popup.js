@@ -3,7 +3,7 @@ const downloadBtn = document.getElementById('downloadBtn');
 const overlay = document.getElementById('overlay');
 const progressBar = document.getElementById('progressBar');
 const statusText = document.getElementById('statusText');
-const lockerstylecard = document.querySelector('.lockerstylecard');
+const lockerstylecard = document.querySelector('lockerstylecard');
 
 // Array of status messages to display during download
 const statusMessages = [
@@ -19,12 +19,14 @@ const statusMessages = [
 // Show popup and start download simulation
 downloadBtn.addEventListener('click', function () {
     overlay.style.display = 'flex';
-    // Hide the download container if it's already showing from a previous attempt
-    if ( lockerstylecard) {
-         lockerstylecard.style.display = 'none';
+    
+    // Hide the download container if it exists
+    if (lockerstylecard) {
+        lockerstylecard.style.display = 'none';
         lockerstylecard.style.transform = 'scale(0.7)';
         lockerstylecard.style.opacity = '0';
     }
+    
     simulateDownload();
 });
 
@@ -32,6 +34,7 @@ downloadBtn.addEventListener('click', function () {
 function simulateDownload() {
     let progress = 0;
     let messageIndex = 0;
+    
     // Reset progress bar and status
     progressBar.style.width = '0%';
     statusText.textContent = statusMessages[0];
@@ -59,13 +62,13 @@ function simulateDownload() {
                 // Show the download container with popup animation
                 if (lockerstylecard) {
                     // Make sure the container has transition styles
-                   lockerstylecard.style.transition = 'all 0.3s ease-in-out';
-                   lockerstylecard.style.display = 'flex'; // or 'flex' depending on your CSS
+                    lockerstylecard.style.transition = 'all 0.3s ease-in-out';
+                    lockerstylecard.style.display = 'flex'; // or block depending on your layout needs
                     
-                    // Small delay to ensure display:block takes effect before animation
+                    // Small delay to ensure display change takes effect before animation
                     setTimeout(() => {
-                       lockerstylecard.style.transform = 'scale(1)';
-                      lockerstylecard.style.opacity = '1';
+                        lockerstylecard.style.transform = 'scale(1)';
+                        lockerstylecard.style.opacity = '1';
                     }, 10);
                 }
                 
@@ -78,6 +81,7 @@ function simulateDownload() {
         } else {
             // Update progress bar
             progressBar.style.width = progress + '%';
+            
             // Update status message occasionally
             if (progress > (messageIndex + 1) * 15 && messageIndex < statusMessages.length - 1) {
                 messageIndex++;
@@ -85,4 +89,3 @@ function simulateDownload() {
             }
         }
     }, 300);
-}
