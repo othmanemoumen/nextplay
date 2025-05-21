@@ -7,14 +7,14 @@
 }
  .locker-banner {
       position: relative;
-      width: 100%;
-      max-width: 600px;
+      width: auto;
+      max-width: auto;
       margin: 0 auto;
     }
 
     /* Background banner image */
     .locker-banner img.locker-banner-bg {
-      width: 100%;
+      width: auto;
       height: auto;
       display: block;
 border-radius: 20px 20px 20px 20px;
