@@ -54,3 +54,14 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+         .style-card {
+background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+  width: auto;
+  height: auto;
+  margin: 2rem 0; /* Adds space above and below */
+  padding: 5px;
+  border-radius: 1rem;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
