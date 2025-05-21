@@ -74,6 +74,42 @@
     }
 
 
+. h2 {
+  color: #2196F3;
+  margin-bottom: 15px;
+}
+
+.offer-tasks {
+  margin: 20px 0;
+}
+
+.task {
+  margin-bottom: 15px;
+}
+
+.task h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.task-btn {
+  background-color: #FFC107;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.task-btn:hover {
+  background-color: #FF9800;
+}
+
+.verification-status {
+  margin: 20px 0;
+}
 
 
 
