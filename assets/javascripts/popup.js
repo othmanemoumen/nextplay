@@ -3,7 +3,6 @@ const downloadBtn = document.getElementById('downloadBtn');
 const overlay = document.getElementById('overlay');
 const progressBar = document.getElementById('progressBar');
 const statusText = document.getElementById('statusText');
-const downloadContainer = document.getElementById('downloadContainer'); // Get the container element
 const lockerstylecard = document.querySelector('.lockerstylecard');
 
 // Array of status messages to display during download
@@ -21,10 +20,10 @@ const statusMessages = [
 downloadBtn.addEventListener('click', function () {
     overlay.style.display = 'flex';
     // Hide the download container if it's already showing from a previous attempt
-    if (downloadContainer) {
-        downloadContainer.style.display = 'none';
-        downloadContainer.style.transform = 'scale(0.7)';
-        downloadContainer.style.opacity = '0';
+    if ( lockerstylecard) {
+         lockerstylecard.style.display = 'none';
+        lockerstylecard.style.transform = 'scale(0.7)';
+        lockerstylecard.style.opacity = '0';
     }
     simulateDownload();
 });
