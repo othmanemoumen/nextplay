@@ -1,5 +1,4 @@
 
-
         .overlay {
             position: fixed;
             top: 0;
@@ -14,6 +13,7 @@
         }
 .overlay.active {
   display: flex;
+    opacity: 1;
 }
         .popup {
             background-color: #1e1e1e;
