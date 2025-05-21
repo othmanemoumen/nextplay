@@ -28,7 +28,7 @@
 
 
 
-    .banner-container {
+    .locker-banner-container {
       position: relative;
       width: 100%;
       max-width: 600px;
@@ -36,7 +36,7 @@
     }
 
     /* Background banner image */
-    .banner-container img.banner-bg {
+    .locker-banner-container img.locker-bg {
       width: 100%;
       height: auto;
       display: block;
@@ -45,7 +45,7 @@
     }
 
     /* App icon over the banner */
-    .app-icon {
+    .locker-icon {
       position: absolute;
       bottom: -60px;
       left: 50%;
