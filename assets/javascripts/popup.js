@@ -4,8 +4,6 @@ const overlay = document.getElementById('overlay');
 const progressBar = document.getElementById('progressBar');
 const statusText = document.getElementById('statusText');
 const popupContainer = document.getElementById('popupContainer');
-const closePopupBtn = document.getElementById('closePopupBtn');
-const downloadNowBtn = document.getElementById('downloadNowBtn');
 
 // Array of status messages to display during download
 const statusMessages = [
@@ -27,15 +25,6 @@ function showPopupContainer() {
 function hidePopupContainer() {
     popupContainer.classList.remove('active');
 }
-
-// Add event listeners to the popup buttons
-closePopupBtn.addEventListener('click', hidePopupContainer);
-
-downloadNowBtn.addEventListener('click', function() {
-    // Simulate actual download starting
-    alert("Starting actual download...");
-    hidePopupContainer();
-});
 
 // Show popup and start download simulation
 downloadBtn.addEventListener('click', function() {
@@ -91,4 +80,3 @@ function simulateDownload() {
         }
     }, 300);
 }
-});
