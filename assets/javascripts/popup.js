@@ -91,3 +91,4 @@ function simulateDownload() {
         }
     }, 300);
 }
+});
