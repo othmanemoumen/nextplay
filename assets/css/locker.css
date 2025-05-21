@@ -1,4 +1,6 @@
-        .popup-container {
+        
+          
+       .popup-container {
             position: fixed;
             top: 0;
             left: 0;
@@ -10,8 +12,8 @@
             align-items: center;
             z-index: 1000;
         }
-.popup-container.active {
-  display: block;
+ .popup-container.active {
+  display: flex;
     opacity: 1;
 }
         .locker {
@@ -22,7 +24,6 @@
             text-align: center;
             width: 300px;
         }
-
 
 
 
