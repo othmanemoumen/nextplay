@@ -1,4 +1,9 @@
-
+.locker-banner {
+      position: relative;
+      width:auto ;
+      max-width:auto;
+      margin: 0 auto;
+    }
  .locker-banner {
       position: relative;
       width: 100%;
