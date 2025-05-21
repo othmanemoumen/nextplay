@@ -12,7 +12,9 @@
             align-items: center;
             z-index: 1000;
         }
-
+.overlay.active {
+  display: flex;
+}
         .popup {
             background-color: #1e1e1e;
             padding: 30px;
