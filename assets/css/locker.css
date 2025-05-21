@@ -1,15 +1,7 @@
 /* Popup Container Styles */
 .popup-container {
-     position: fixed;
-            top: 0;
-            left: 0;
-            width: auto;
-            height: auto;
-            background-color: rgba(0, 0, 0, 0.5);
+    
             display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
 }
 
 .popup-container.active {
