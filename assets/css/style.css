@@ -145,7 +145,7 @@ html, body {
             border-radius: 50px;
             overflow: hidden;
             padding: 2px;
-            background:  linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+            background:  linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
 
         }
         
@@ -171,7 +171,7 @@ html, body {
         }
         
         .search-bar button {
-            background:  linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+            background:  linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
           border: none;
             padding: 0.7rem 1.5rem;
             color: white;
@@ -247,7 +247,7 @@ html, body {
 
               /* Base styles */
 .banner-card {
- --background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+ --background: linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
 width: 100%;
   height: 300px;
   max-width: 100%;
@@ -306,14 +306,14 @@ font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .banner-card .highlight {
- background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+ background: linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
 .banner-card .explore-btn {
-   background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+   background: linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
   color: #181818;
   border: none;
   padding: 0.6rem 1.5rem;
@@ -324,7 +324,7 @@ font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .banner-card .explore-btn:hover {
-  background: linear-gradient(to left, #fbc2eb, #fad0c4, #ff9a9e);
+  background: linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
   color: #fff;
 }
 @media (max-width: 768px) {
@@ -397,7 +397,7 @@ font-size: clamp(1rem, 4vw, 2rem);
 
 /* Card Box */
 .card {
- --background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+ --background: linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
 
   background: var(--background);
   padding: 5px;
@@ -465,7 +465,7 @@ font-size: clamp(1rem, 4vw, 2rem);
 
 /* Button */
 .download-btn {
-   background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+   background: linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
   color: #181818;
   padding: 0.5rem 1.2rem;
   font-weight: bold;
@@ -477,7 +477,7 @@ font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .download-btn:hover {
-background: linear-gradient(to left, #f78ca0, #f9748f, #7aa1f7);
+background: linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
   color: #fff;
 }
 
