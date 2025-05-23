@@ -1,7 +1,7 @@
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
-$apiKey ='nmVWPdaTnoLKZZqtaKUnv7p1Pex
-cjIBI'; // Replace with your IPQS API key
+$apiKey = 'nmVWPdaTnoLKZZqtaKUnv7p1PexcjIBI'; // single line, no spaces or line breaks
+
 $smartLink = 'https://smrturl.co/8f336b5'; // Your real smart link
 $redirectIfBlocked = 'blocked.html'; // Optional: page for blocked users
 
