@@ -259,7 +259,7 @@ html, body {
 }
       
            .style-card {
-background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+background: linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
   width: auto;
   height: auto;
   margin: 2rem 0; /* Adds space above and below */
@@ -331,7 +331,7 @@ background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
         }
         
         .download-button {
-   background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
+   background: linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
   padding: 0.5rem 1.2rem;
   font-weight: bold;
   font-size: 1rem;
@@ -341,7 +341,7 @@ background: linear-gradient(to left, #ff9a9e, #fad0c4, #fbc2eb);
   transition: background 0.3s ease;
         }
         .download-button:hover {
-background: linear-gradient(to left, #fbc2eb , #fad0c4, #ff9a9e);
+background: linear-gradient(to left,  #8B0000, #4B0082, #2F4F4F);
   color: #fff;
 }
         
